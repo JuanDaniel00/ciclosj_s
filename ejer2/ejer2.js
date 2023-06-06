@@ -2,18 +2,25 @@
 
 let numero = 0;
 let Precio = 0;
+let PrecioFinal = 0;
 
 
-numero = prompt("Ingrese el numero de la suerte, 0 = salir");
+while(true){
 
-while(numero != 0){
+    numero = parseInt(prompt("Ingrese un número al azar"));
 
+    if (numero == 0) {
+        break;
+    }
+    
     Precio = prompt("Ingrese el precio del producto");
 
     if (numero < 74) {
-        console.log(`El precio final es de: ${(PrecioFinal*15)/100}`);
+        PrecioFinal = Precio - (Precio*15)/100;
+        console.log(`El precio final es de: ${PrecioFinal} con el descuento del 15%`);
     } else {
-        console.log(`El precio final es de: ${(PrecioFinal*20)/100}`);
+        PrecioFinal = Precio - (Precio*20)/100;
+        console.log(`El precio final es de: ${PrecioFinal} con el descuento del 20%`);
     }
 
 }

@@ -9,11 +9,11 @@ let personas = parseInt(prompt("Ingrese el número de personas a calcular"));
 for (let i = 1; i <= personas; i++) {
 
     genero = prompt(`Digite el sexo de la persona ${i} M/F `).toUpperCase();
-    edad = parseInt(prompt(`Ingrese la edad de la persona ${i}` )).toUpperCase();
+    edad = parseInt(prompt(`Ingrese la edad de la persona ${i}`));
 
     if (genero == "M") {
         pulsaciones = (210 - edad) / 10;
-    }else if (genero == "F".toUpperCase()) {
+    }else if (genero == "F") {
         pulsaciones = (220 - edad) / 10;
     }else{
         console.log("El sexo ingresado no es valido");
