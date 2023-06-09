@@ -7,13 +7,13 @@ let PrecioFinal = 0;
 
 while(true){
 
-    numero = parseInt(prompt("Ingrese un número al azar"));
+    numero = parseInt(prompt("Ingrese un número al azar, 0 para salir"));
 
     if (numero == 0) {
         break;
     }
     
-    Precio = prompt("Ingrese el precio del producto");
+    Precio = prompt("Ingrese el precio total de la compra");
 
     if (numero < 74) {
         PrecioFinal = Precio - (Precio*15)/100;

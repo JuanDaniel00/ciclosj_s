@@ -16,9 +16,9 @@ while (monto != 0) {
         cuota = (monto * 2) / 100;
     }
 
-    console.log(`La cuota a pagar del cliente ${clientes} es de: ${cuota}`);
+    console.log(`La cuota a pagar del cliente ${clientes } es de: ${cuota}`);
 
-    monto = parseInt(prompt(`Precione 0 para salir, o ingrese el monto de la fianza para el cliente ${clientes}`));
+    monto = parseInt(prompt(`Precione 0 para salir, o ingrese el monto de la fianza para el cliente ${clientes + 1}`));
 }
 
 
