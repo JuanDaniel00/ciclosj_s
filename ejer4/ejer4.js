@@ -20,8 +20,3 @@ while (monto != 0) {
 
     monto = parseInt(prompt(`Precione 0 para salir, o ingrese el monto de la fianza para el cliente ${clientes + 1}`));
 }
-
-
-let contper = 1
-
-
