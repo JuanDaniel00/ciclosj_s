@@ -18,7 +18,7 @@ while(true){
     i++;
 
     marca = prompt("Ingrese la marca del estéreo:").toUpperCase();
-    iva = parseFloat(prompt("Ingrese el IVA del estéreo:"))/100;
+    iva = parseFloat(prompt("Ingrese el IVA del estéreo:(ignore el %)"))/100;
 
     if(precioEstereo >= 2000){
         descuento = precioEstereo * 0.1;

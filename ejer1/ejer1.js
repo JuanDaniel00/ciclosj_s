@@ -3,8 +3,6 @@
 let llantas = 0;
 let Precio = 0;
 let PrecioFinal = 0;
-let Total = 0;
-
 
 for (let i = 1; i <= 10 ; i++){
     llantas = parseInt(prompt("Ingrese el número de llantas a comprar"));

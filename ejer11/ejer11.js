@@ -21,19 +21,19 @@ for (let i = 1; i <= clientes; i++) {
 
     } else if (kilosManzanas >= 2.01 && kilosManzanas <= 5) {
 
-        descuento = precioKilo * 0.1;
+        descuento = (precioKilo * 0.1).toFixed(2);
 
     } else if (kilosManzanas >= 5.01 && kilosManzanas <= 10) {
 
-        descuento = precioKilo * 0.15;
+        descuento = (precioKilo * 0.15).toFixed(2);
 
     } else if (kilosManzanas >= 10.01) {
 
-        descuento = precioKilo * 0.2;
+        descuento = (precioKilo * 0.2).toFixed(2);
 
     }
 
-    preciofinal = kilosManzanas * precioKilo - descuento;
+    preciofinal = (kilosManzanas * precioKilo - descuento).toFixed(2);
 
     console.log(`El cliente ${i} tiene un descuento de $${descuento} y debe pagar $${preciofinal}`);
 }
